@@ -27,6 +27,12 @@ INSERT INTO users(username, password, email)
 VALUES
 ("danielthorr", "letmein", "danielthorr@gmail.com");
 
-INSERT INTO item (name, description, category_FK, manufacturer, tag1, tag2)
+INSERT INTO item (name, description, category_FK)
 VALUES
-("Meep-Meep-Meep", "Nail polish, red glitter", 1, 18, 3, 13);
+("Meep-Meep-Meep", "Nail polish, red glitter", 1);
+
+INSERT INTO bindTag (item_FK, tag_FK)
+VALUES
+(1, 18),
+(1, 3),
+(1, 13);
